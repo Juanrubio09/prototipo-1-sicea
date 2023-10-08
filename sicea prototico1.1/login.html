@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login-estilos.css">
+    <link rel="stylesheet" href="siceaestilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Iniciar Sesión</title>
+    <!-- Agrega tus estilos y enlaces aquí si es necesario -->
+</head>
+<body class="login login-page"> <!-- Puedes combinar las clases en una sola atribución -->
+    <a href="sicea.html"><img src="imagenes/logo.png" alt="Logo del proyecto" id="logo"></a>
+    <a href="sicea.html" class="return-button">Volver a SICEA</a> 
+    <br>
+    <a href="home.html" class="return-button">home</a>
+    <h1>Iniciar Sesión</h1>
+    <form action="procesar_login.php" method="POST" class="login-form"> <!-- Agrega la clase "login-form" al form -->
+        <!-- Agrega aquí tus campos de usuario y contraseña con la clase "login-input" -->
+        <input type="text" name="usuario" placeholder="Usuario" required class="login-input">
+        <input type="password" name="contrasena" placeholder="Contraseña" required class="login-input">
+        <button type="submit" class="login-button">Iniciar Sesión</button>
+        <button type="button" class="registro-button" onclick="window.location.href='registro.html'">Regístrate</button>
+    </form>
+</body>
+</html>
